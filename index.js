@@ -2,6 +2,7 @@ const dotenv = require("dotenv");
 const { MezonClient } = require("mezon-sdk");
 dotenv.config(); 
 
+const handleIntro = require("./commands/intro");
 const handlePlay = require("./commands/play");
 
 async function main() {
@@ -13,10 +14,12 @@ async function main() {
     const text = event?.content?.t?.toLowerCase();
     if (!text) return;
 
-    if (text.startsWith("*playmusic")) {
-     
-      return handlePlay(client, event);
+    if(text.startsWith("*intro")) {
+      return handleIntro(client, event);
+    }
 
+    if (text.startsWith("*playmusic")) {
+      return handlePlay(client, event);
     }
 
   });

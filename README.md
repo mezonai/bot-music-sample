@@ -1,3 +1,6 @@
+
+## This bot is written based on new SDK (additional functions, playMedia API)
+
 ## Create your Mezon application
 
 Visit the [Developers Portal](https://dev-developers.nccsoft.vn/) to create your application.
@@ -20,3 +23,4 @@ Copy `.env.example` to `.env` and replace it with your application token.
 # development
 $ yarn start
 ```
+
