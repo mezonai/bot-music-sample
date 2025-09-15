@@ -4,7 +4,7 @@
 ### Some ping bot ex:
 #### *intro
 #### *playmusic <url.mp3>
-
+#### *playmusic <url.mp4>
 ## Create your Mezon application
 
 Visit the [Developers Portal](https://dev-developers.nccsoft.vn/) to create your application.
